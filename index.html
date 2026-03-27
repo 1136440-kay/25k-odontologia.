@@ -9,6 +9,7 @@
 * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
 body { background:#fff; color:#333; line-height:1.6; }
 a { text-decoration:none; color: inherit; }
+
 /* Menu de navegação */
 nav { display:flex; justify-content:space-between; align-items:center; padding:20px; background:#800000; color:white; position:sticky; top:0; }
 nav h1 { font-size:1.8rem; }
@@ -16,29 +17,65 @@ nav ul { display:flex; list-style:none; }
 nav ul li { margin-left:20px; }
 nav ul li a { color:white; transition:0.3s; }
 nav ul li a:hover { color:#ffcccc; }
-/* Banner principal */
-.banner { background:#800000 url('https://images.unsplash.com/photo-1588776814546-3e7f823f2e9d?auto=format&fit=crop&w=1650&q=80') no-repeat center/cover; height:60vh; display:flex; justify-content:center; align-items:center; color:white; text-align:center; }
-.banner h2 { font-size:2.5rem; background:rgba(0,0,0,0.5); padding:10px 20px; border-radius:10px; }
+
+/* Banner da capa do aplicativo */
+.app-banner {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Ajuste a altura conforme necessário */
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.app-banner .banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preenche o banner mantendo proporção */
+  display: block;
+}
+
+.app-banner .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.app-banner .banner-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 /* Seção geral */
 section { padding:60px 20px; max-width:1200px; margin:0 auto; }
 h2.section-title { text-align:center; margin-bottom:40px; color:#800000; }
+
 /* Sobre */
 #sobre p { max-width:800px; margin:0 auto; text-align:center; }
+
 /* Serviços */
 .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
 .service-card { background:#fff0f0; padding:20px; border-radius:10px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s; }
 .service-card:hover { transform:translateY(-5px); }
+
 /* Equipe */
 .team { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
 .team-member { text-align:center; }
 .team-member img { width:150px; height:150px; object-fit:cover; border-radius:50%; margin-bottom:10px; }
+
 /* Contato */
 #contato form { display:grid; gap:15px; max-width:500px; margin:0 auto; }
 #contato input, #contato textarea { padding:10px; border-radius:8px; border:1px solid #ccc; width:100%; }
 #contato button { background:#800000; color:white; border:none; padding:12px; border-radius:8px; cursor:pointer; transition:0.3s; }
 #contato button:hover { background:#a00000; }
+
 /* Rodapé */
 footer { background:#800000; color:white; text-align:center; padding:20px; }
+
 </style>
 </head>
 <body>
@@ -52,15 +89,21 @@ footer { background:#800000; color:white; text-align:center; padding:20px; }
     <li><a href="#contato">Contato</a></li>
   </ul>
 </nav>
-<!-- BANNER -->
-<div class="banner">
-  <h2>Sorria com Confiança</h2>
+
+<!-- BANNER DO APLICATIVO -->
+<div class="app-banner">
+  <img src="/mnt/data/a_photograph_taken_during_the_early_evening_showca.png" alt="25K Odontologia Especializada" class="banner-img">
+  <div class="banner-text">
+    <h1>25K Odontologia Especializada</h1>
+  </div>
 </div>
+
 <!-- SOBRE -->
 <section id="sobre">
   <h2 class="section-title">Sobre Nós</h2>
   <p>A 25K Odontologia Especializada oferece atendimento odontológico completo, combinando estética, funcionalidade e saúde bucal. Nossa equipe é formada por profissionais experientes, que utilizam tecnologia de ponta para tratamentos de alta qualidade. A clínica está localizada na Rua das Flores, 123, São Paulo - SP.</p>
 </section>
+
 <!-- SERVIÇOS -->
 <section id="servicos">
   <h2 class="section-title">Nossos Serviços</h2>
@@ -83,6 +126,7 @@ footer { background:#800000; color:white; text-align:center; padding:20px; }
     </div>
   </div>
 </section>
+
 <!-- EQUIPE -->
 <section id="equipe">
   <h2 class="section-title">Nossa Equipe</h2>
@@ -104,6 +148,7 @@ footer { background:#800000; color:white; text-align:center; padding:20px; }
     </div>
   </div>
 </section>
+
 <!-- CONTATO -->
 <section id="contato">
   <h2 class="section-title">Contato</h2>
@@ -114,15 +159,18 @@ footer { background:#800000; color:white; text-align:center; padding:20px; }
     <button type="submit">Enviar</button>
   </form>
 </section>
+
 <!-- RODAPÉ -->
 <footer>
   <p>📍 Rua das Flores, 123, São Paulo - SP | © 2026 25K Odontologia Especializada. Todos os direitos reservados.</p>
 </footer>
+
 <script>
 function enviarMensagem(e){
   e.preventDefault();
   alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
 }
 </script>
+
 </body>
 </html>
