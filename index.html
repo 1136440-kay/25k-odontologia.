@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>25K Odontologia Especializada</title>
+<style>
+/* Reset e estilos base */
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif; }
+body { background:#fff; color:#333; line-height:1.6; }
+a { text-decoration:none; color: inherit; }
+/* Menu de navegação */
+nav { display:flex; justify-content:space-between; align-items:center; padding:20px; background:#800000; color:white; position:sticky; top:0; }
+nav h1 { font-size:1.8rem; }
+nav ul { display:flex; list-style:none; }
+nav ul li { margin-left:20px; }
+nav ul li a { color:white; transition:0.3s; }
+nav ul li a:hover { color:#ffcccc; }
+/* Banner principal */
+.banner { background:#800000 url('https://images.unsplash.com/photo-1588776814546-3e7f823f2e9d?auto=format&fit=crop&w=1650&q=80') no-repeat center/cover; height:60vh; display:flex; justify-content:center; align-items:center; color:white; text-align:center; }
+.banner h2 { font-size:2.5rem; background:rgba(0,0,0,0.5); padding:10px 20px; border-radius:10px; }
+/* Seção geral */
+section { padding:60px 20px; max-width:1200px; margin:0 auto; }
+h2.section-title { text-align:center; margin-bottom:40px; color:#800000; }
+/* Sobre */
+#sobre p { max-width:800px; margin:0 auto; text-align:center; }
+/* Serviços */
+.services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+.service-card { background:#fff0f0; padding:20px; border-radius:10px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s; }
+.service-card:hover { transform:translateY(-5px); }
+/* Equipe */
+.team { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+.team-member { text-align:center; }
+.team-member img { width:150px; height:150px; object-fit:cover; border-radius:50%; margin-bottom:10px; }
+/* Contato */
+#contato form { display:grid; gap:15px; max-width:500px; margin:0 auto; }
+#contato input, #contato textarea { padding:10px; border-radius:8px; border:1px solid #ccc; width:100%; }
+#contato button { background:#800000; color:white; border:none; padding:12px; border-radius:8px; cursor:pointer; transition:0.3s; }
+#contato button:hover { background:#a00000; }
+/* Rodapé */
+footer { background:#800000; color:white; text-align:center; padding:20px; }
+</style>
+</head>
+<body>
+<!-- MENU -->
+<nav>
+  <h1>25K Odontologia</h1>
+  <ul>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#equipe">Equipe</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+<!-- BANNER -->
+<div class="banner">
+  <h2>Sorria com Confiança</h2>
+</div>
+<!-- SOBRE -->
+<section id="sobre">
+  <h2 class="section-title">Sobre Nós</h2>
+  <p>A 25K Odontologia Especializada oferece atendimento odontológico completo, combinando estética, funcionalidade e saúde bucal. Nossa equipe é formada por profissionais experientes, que utilizam tecnologia de ponta para tratamentos de alta qualidade. A clínica está localizada na Rua das Flores, 123, São Paulo - SP.</p>
+</section>
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <h2 class="section-title">Nossos Serviços</h2>
+  <div class="services">
+    <div class="service-card">
+      <h3>Clareamento Dental</h3>
+      <p>Procedimentos seguros com laser ou produtos de qualidade para dentes mais claros e uniformes, preservando esmalte e gengiva.</p>
+    </div>
+    <div class="service-card">
+      <h3>Ortodontia</h3>
+      <p>Aparelhos convencionais ou alinhadores invisíveis (Invisalign) para correção de mordida e alinhamento, melhorando estética e função.</p>
+    </div>
+    <div class="service-card">
+      <h3>Implantes Dentários</h3>
+      <p>Implantes seguros com próteses fixas ou removíveis, devolvendo estética, conforto e confiança ao paciente.</p>
+    </div>
+    <div class="service-card">
+      <h3>Periodontia</h3>
+      <p>Tratamento e prevenção de doenças gengivais e periodontais, com limpezas profundas, raspagem e acompanhamento contínuo.</p>
+    </div>
+  </div>
+</section>
+<!-- EQUIPE -->
+<section id="equipe">
+  <h2 class="section-title">Nossa Equipe</h2>
+  <div class="team">
+    <div class="team-member">
+      <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=400&q=80" alt="Dra. Ana">
+      <h3>Dra. Ana Oliveira</h3>
+      <p>Ortodontista – Especialista em alinhamento dentário com aparelhos convencionais e invisíveis.</p>
+    </div>
+    <div class="team-member">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80" alt="Dr. Bruno">
+      <h3>Dr. Bruno Costa</h3>
+      <p>Implantodontista – Reabilitação oral com implantes dentários, próteses fixas e restaurações estéticas.</p>
+    </div>
+    <div class="team-member">
+      <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a8?auto=format&fit=crop&w=400&q=80" alt="Dra. Carla">
+      <h3>Dra. Carla Martins</h3>
+      <p>Periodontista – Especialista em saúde gengival, prevenção e tratamento de doenças periodontais.</p>
+    </div>
+  </div>
+</section>
+<!-- CONTATO -->
+<section id="contato">
+  <h2 class="section-title">Contato</h2>
+  <form onsubmit="enviarMensagem(event)">
+    <input type="text" placeholder="Nome" required>
+    <input type="email" placeholder="E-mail" required>
+    <textarea placeholder="Mensagem" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+<!-- RODAPÉ -->
+<footer>
+  <p>📍 Rua das Flores, 123, São Paulo - SP | © 2026 25K Odontologia Especializada. Todos os direitos reservados.</p>
+</footer>
+<script>
+function enviarMensagem(e){
+  e.preventDefault();
+  alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+}
+</script>
+</body>
+</html>
